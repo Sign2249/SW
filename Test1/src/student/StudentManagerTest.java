@@ -31,7 +31,7 @@ class StudentManagerTest {
 	void testHasStudent() {
 		sm.addStudent("Alice");
 		assertTrue(sm.hasStudent("Alice"));
-		assertThrows(IllegalArgumentException.class, () -> sm.addStudent("Bob"));
+		assertThrows(IllegalArgumentException.class, () -> sm.addStudent("Alice"));
 	}
 	
 	void testNoStudent() {
